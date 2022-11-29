@@ -1,0 +1,131 @@
+@media only screen and (max-width: 700px) {
+    .newsCard{
+        padding: 1em;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 45vh minmax(60vh,auto) 10vh !important;
+    }
+    .img{
+        grid-row: 1 !important;
+    }
+    .newsImg{
+        width: 80vw  !important;
+      border-radius: 10px;
+     
+  }
+    .info{
+        grid-column: 1 !important;
+        grid-row: 2  !important;
+    }
+    .btnNewsMore{
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+    }
+  }
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
+}
+
+.container{
+    height: 100vh;
+    background-color: #333;
+}
+.newsContant{
+    
+    height: 88vh;
+  overflow-y: scroll;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.newsCard{
+   
+    min-height:70vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns:40vw 50vw  ;
+    grid-template-rows: minmax(60vh,auto) 10vh;
+    /* background-color: #3C3478; */
+    background-color: #792754;
+    border-radius: 10px;
+    margin-left: 5vw;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.img{
+    grid-column: 1;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnNewsMore{
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsImg{
+      height: 45vh;
+      width: 35vw;
+    border-radius: 10px;
+   
+}
+.info{
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 10vh minmax(15vh,auto) minmax(15vh,auto) 10vh;
+   
+}
+.title{
+    grid-row: 2;
+}  
+.title p{
+    font-size: 1.1em;
+    font-weight: 600;
+}   
+.desc{
+    grid-row: 3;
+}
+.source{
+    grid-row: 4;
+}
+.sourceItem{
+  display: flex;
+  align-items: center;
+}
+.btnNewsMore button{
+    padding:10px ;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+.hide{
+    display: none;
+}
+.header{
+    font-size: 2em;
+    color: white;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
